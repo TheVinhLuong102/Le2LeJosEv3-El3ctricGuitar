@@ -13,10 +13,10 @@ In this project I am using the **LeJOS EV3 v0.9.1beta** framework (see https://s
 
 ## Resources
 The program uses an image file _LOGO.lni_ that is in the project's _resources_ directory. 
-Please upload them to your EV3 Brick via SCP to the directory _/home/lejos/lib_.
+Please upload it to your EV3 Brick via SCP to the directory _/home/lejos/lib_.
 
 The **image file** was converted from the _LOGO.rgf_ found in the building instructions:
-1. Convert RGF to BMP using the ImageMagick convert program (download ImageMagick static from https://www.imagemagick.org/script/download.php.
+1. Convert RGF to BMP using the ImageMagick _convert_ program (download ImageMagick static from https://www.imagemagick.org/script/download.php.
 Then run **convert -monochrome LOGO.rgf LOGO.bmp**
 
 2. Convert the BMP file to the needed LNI format with the LeJOS EV3 Image Converter program that is part of the EV3 Control Center or can run stand-alone from the bin directory of the LeJOS EV3 installation (ev3image.bat). Alas, the Image Converter is still adapted to the old Mindstorms NXT Brick and displays a warning if the loaded image exceeds 100x64 pixels. However, it correctly converts images for the Mindstorms EV3 with up to 178x128 pixels.
